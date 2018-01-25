@@ -1,0 +1,9 @@
+1. basic user info:
+- active days
+- purchase counts
+- recent purchase day
+- active hours
+- CTR
+- conversion rate
+
+2. extract feature in a finer time resolution, i.e. the recent 1 hour, the recent 1 year.
