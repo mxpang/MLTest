@@ -1,13 +1,12 @@
 import pandas as pd
 import pickle
 
-df2=pd.read_csv('actionLogCom.csv')
+df2=pd.read_csv('file_name.csv')
 
 def dump_file(dicts, file_name):
     with open(file_name,'wb') as handle:
         pickle.dump(dicts, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-#get the initial component
+#fill na with new value
 def fill_na(row):
     if(pd.isna(row[4])):
         row[4]=row[3]
