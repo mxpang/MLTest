@@ -7,3 +7,6 @@
 - conversion rate
 
 2. extract feature in a finer time resolution, i.e. the recent 1 hour, the recent 1 year.
+
+
+3. Note: be careful when solving problems with time-series nature. Majority of these cases, an out-of-time validation need to be used to prevent data leakage (using training data in the future to predict something in the past) instead of a random K-fold cross validation.
