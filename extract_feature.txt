@@ -10,3 +10,13 @@
 
 
 3. Note: be careful when solving problems with time-series nature. Majority of these cases, an out-of-time validation need to be used to prevent data leakage (using training data in the future to predict something in the past) instead of a random K-fold cross validation.
+
+>>> np.vstack(([1,2,3],[4,5,6]))
+array([[1, 2, 3],
+       [4, 5, 6]])
+>>> np.column_stack(([1,2,3],[4,5,6]))
+array([[1, 4],
+       [2, 5],
+       [3, 6]])
+>>> np.hstack(([1,2,3],[4,5,6]))
+array([1, 2, 3, 4, 5, 6])
